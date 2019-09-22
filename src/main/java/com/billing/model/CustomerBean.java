@@ -5,8 +5,7 @@ import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class CustomerBean {
-	//private static int count = 1;
-	//private final SimpleIntegerProperty rNo;
+	
 	private final SimpleStringProperty rName;
 	private final SimpleStringProperty rEmail;
 	private final SimpleLongProperty rPhone1;

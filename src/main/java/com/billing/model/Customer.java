@@ -51,13 +51,13 @@ public class Customer {
 		else
 			this.phone1 = Long.parseLong(phone1);
 	}
-	public void setPhone1(int phone1) {
+	public void setPhone1(long phone1) {
 		this.phone1 = phone1;
 	}
 	public long getPhone2() {
 		return phone2;
 	}
-	public void setPhone2(int phone2) {
+	public void setPhone2(long phone2) {
 		this.phone2 = phone2;
 	}
 	public void setPhone2(String phone2) {
