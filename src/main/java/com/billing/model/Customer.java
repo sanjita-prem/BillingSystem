@@ -9,8 +9,8 @@ public class Customer {
 	private String name;
 
 	private String email;
-	private int phone1;
-	private int phone2;
+	private long phone1;
+	private long phone2;
 	private String state;
 	private String city;
 	private String address;
@@ -42,19 +42,19 @@ public class Customer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getPhone1() {
+	public long getPhone1() {
 		return phone1;
 	}
 	public void setPhone1(String phone1) {
 		if(phone1 == null || phone1.trim().isEmpty())
 			this.phone1 = 0;
 		else
-			this.phone1 = Integer.parseInt(phone1);
+			this.phone1 = Long.parseLong(phone1);
 	}
 	public void setPhone1(int phone1) {
 		this.phone1 = phone1;
 	}
-	public int getPhone2() {
+	public long getPhone2() {
 		return phone2;
 	}
 	public void setPhone2(int phone2) {
@@ -64,7 +64,7 @@ public class Customer {
 		if(phone2 == null || phone2.trim().isEmpty())
 			this.phone2 = 0;
 		else
-			this.phone2 = Integer.parseInt(phone2);
+			this.phone2 = Long.parseLong(phone2);
 	}
 	public String getState() {
 		return state;

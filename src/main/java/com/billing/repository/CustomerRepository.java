@@ -190,8 +190,8 @@ public class CustomerRepository{
 	          prepStatement.setInt(1, ++id);
 	          prepStatement.setString(2, o.getName());
 	          prepStatement.setString(3, o.getEmail());
-	          prepStatement.setInt(4, o.getPhone1());
-	          prepStatement.setInt(5, o.getPhone2());
+	          prepStatement.setLong(4, o.getPhone1());
+	          prepStatement.setLong(5, o.getPhone2());
 	          prepStatement.setString(6, o.getState());
 	          prepStatement.setString(7, o.getCity());
 	          prepStatement.setString(8, o.getAddress());
@@ -236,8 +236,8 @@ public class CustomerRepository{
 
 			prepStatement.setString(1, customer.getName());
 	          prepStatement.setString(2, customer.getEmail());
-	          prepStatement.setInt(3, customer.getPhone1());
-	          prepStatement.setInt(4, customer.getPhone2());
+	          prepStatement.setLong(3, customer.getPhone1());
+	          prepStatement.setLong(4, customer.getPhone2());
 	          prepStatement.setString(5, customer.getState());
 	          prepStatement.setString(6, customer.getCity());
 	          prepStatement.setString(7, customer.getAddress());

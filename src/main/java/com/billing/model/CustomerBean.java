@@ -1,6 +1,7 @@
 package com.billing.model;
 
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class CustomerBean {
@@ -8,8 +9,8 @@ public class CustomerBean {
 	//private final SimpleIntegerProperty rNo;
 	private final SimpleStringProperty rName;
 	private final SimpleStringProperty rEmail;
-	private final SimpleIntegerProperty rPhone1;
-	private final SimpleIntegerProperty rPhone2;
+	private final SimpleLongProperty rPhone1;
+	private final SimpleLongProperty rPhone2;
 	private final SimpleStringProperty rState;
 	private final SimpleStringProperty rCity;
 	private final SimpleStringProperty rAdress;
@@ -20,14 +21,14 @@ public class CustomerBean {
 	private final SimpleStringProperty rGstNo;
 	private final SimpleIntegerProperty rActive;
 	
-	public CustomerBean(String name, String email, int phone1, int phone2, String state, String city, String adress,
+	public CustomerBean(String name, String email, long phone1, long phone2, String state, String city, String adress,
 			int pin, String created, String aliasName, String panNo, String gstNo, int active) {
 		super();
 		//this.rNo = new SimpleIntegerProperty(count++);
 		this.rName= new SimpleStringProperty(name);
 		this.rEmail= new SimpleStringProperty(email);
-		this.rPhone1= new SimpleIntegerProperty(phone1);;
-		this.rPhone2= new SimpleIntegerProperty(phone2);
+		this.rPhone1= new SimpleLongProperty(phone1);
+		this.rPhone2= new SimpleLongProperty(phone2);
 		this.rState= new SimpleStringProperty(state);
 		this.rCity= new SimpleStringProperty(city);
 		this.rAdress= new SimpleStringProperty(adress);
@@ -57,17 +58,17 @@ public class CustomerBean {
 	public void setREmail(String email) {
 		this.rEmail.set(email);
 	}
-	public int getRPhone1() {
+	public long getRPhone1() {
 		return rPhone1.get();
 	}
-	public void setRPhone1(int phone1) {
-		this.rPhone1.set(phone1);;
+	public void setRPhone1(long phone1) {
+		this.rPhone1.set(phone1);
 	}
-	public int getRPhone2() {
+	public long getRPhone2() {
 		return rPhone2.get();
 	}
-	public void setRPhone2(String phone2) {
-		this.rPhone2.get();
+	public void setRPhone2(long phone2) {
+		this.rPhone2.set(phone2);
 	}
 	public String getRState() {
 		return rState.get();
