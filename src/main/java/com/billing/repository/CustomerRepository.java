@@ -237,7 +237,7 @@ public class CustomerRepository{
 			prepStatement.setString(1, customer.getName());
 	          prepStatement.setString(2, customer.getEmail());
 	          prepStatement.setLong(3, customer.getPhone1());
-	          prepStatement.setLong(4, customer.getPhone2());
+	          prepStatement.setLong(4, customer.getPhone2()); 
 	          prepStatement.setString(5, customer.getState());
 	          prepStatement.setString(6, customer.getCity());
 	          prepStatement.setString(7, customer.getAddress());
